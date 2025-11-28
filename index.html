@@ -21,9 +21,23 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicons/favicon-16x16.png"
+    />
     <link rel="manifest" href="/images/favicons/site.webmanifest" />
     <title>Drogaria Monte Carlo</title>
     <style>
@@ -147,16 +161,6 @@
         width: 400px;
       }
 
-      @media screen and (max-width: 767px) {
-        .textContent {
-          flex-direction: column-reverse;
-        }
-        .textContent > .image > img {
-          border-radius: 70px;
-          width: 200px;
-        }
-      }
-
       .botaoPedido {
         background-color: #07932f;
         color: #fff;
@@ -188,13 +192,6 @@
         justify-content: space-evenly;
         align-items: center;
         flex-direction: row;
-      }
-
-      @media screen and (max-width: 767px) {
-        .services {
-          flex-direction: column-reverse;
-          justify-content: center;
-        }
       }
 
       .services > .title {
@@ -234,6 +231,26 @@
 
       .azul {
         color: #044d91 !important;
+      }
+
+      /* Código de estilo para dispositivos móveis */
+      @media screen and (max-width: 767px) {
+        .textContent {
+          flex-direction: column-reverse;
+        }
+
+        .textContent > .title > h2 {
+          text-align: center;
+        }
+
+        .textContent > .image > img {
+          border-radius: 70px;
+          width: 200px;
+        }
+        .services {
+          flex-direction: column-reverse;
+          justify-content: center;
+        }
       }
     </style>
     <script
@@ -279,7 +296,11 @@
         </ul>
       </div>
       <div class="image">
-        <img src="./images/farmaceutica.png" alt="farmaceutico" title="Nayara Silvestre "/>
+        <img
+          src="./images/farmaceutica.png"
+          alt="farmaceutico"
+          title="Nayara Silvestre "
+        />
       </div>
     </div>
     <div class="bg">
